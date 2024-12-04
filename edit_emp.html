@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Editar empresa</title>
+</head>
+<body>
+
+    <form id="Formulario" method = "POST">
+
+        <fieldset> <!--Agrupar dentro de uma caixa-->
+
+            <legend class = "titulo_form">Modificar Empresa</legend><!--Titulo do agrupamento-->
+                
+                <!--Solicita código da Empresa
+                <div class="input-container">
+                    <label for="codigo" class="label_input">Código:</label><br>
+                    <input type="number" id = "codigo" class="inputuser"><br><br>
+                </div>-->
+
+                <!--Solicita CNPJ da Empresa, Formato especifico, campo obrigatório-->
+                <div class="input-container">
+                    <label for="cnpj" class="label_input">CNPJ:</label><br>
+                    <input type="cnpj" id = "cnpj" class="inputuser" name="cnpj"><br><br>
+                </div>
+
+                <!--Solicita a Razão Social da Empresa, campo obrigatório-->
+                <div class="input-container">
+                    <label for = "razao" class="label_input">
+                        Razão Social:
+                    </label><br>
+                    <input type = "razao" id = "razao" class="inputuser"><br><br>
+                </div>
+
+                <!--Solicita Nome Fantasia da Empresa, campo obrigatório-->
+                <div class="input-container">
+                    <label for = "Nome_Fantasia" class="label_input">
+                        Nome Fantasia:
+                    </label><br>
+                    <input type = "Nome_Fantasia" id = "Nome_Fantasia" class="inputuser"><br><br>
+                </div>
+
+                <!--Solicita fota da Empresa(logo), campo opcional-->
+                <div class="input-container">
+                    <label for = "foto" class="label_input">Foto:</label><br>
+                    <input type = "file" id="foto"><br><br>
+                </div>
+
+                <br>
+
+                <!--Botão Modificar Empresa-->
+                <button class="Modificar" type = "submit" value="Modificar">Modificar</button>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+/* *** DIV CONTEUDO *** */
+#conteudo{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 65px 80px 1fr;
+    grid-template-areas:
+    "menuLateral cabecalho"
+    "menuLateral conteudoPrincipal"
+    "menuLateral conteudoPrincipal";
+}
+
+
+/* *** CABEÇALHO *** */
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #000031;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+.tituloDaPagina{
+    position: absolute;
+    right:50px;
+    font-size: 40px;
+    background: var(--chroma, linear-gradient(90deg, #EBBD36, #e34886));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* *** DIV MENU LATERAL *** */
+.menuLateral{
+    grid-area: menuLateral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 25px;
+    border-radius: 0px 18px 18px 0px;
+    background-image: linear-gradient(to right, rgb(17, 54, 71),rgb(20,147,220));
+}
+
+.conteudoMenuLateral{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLogo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+
+.imgLogo img{
+    width: 150px;
+
+}
+
+.itensMenuLateral{
+    gap: 10px;
+    list-style: none;
+
+}
+
+.item{
+    border-radius: 16px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.item:hover:not(.active)
+ {
+    background-color:#B2D4E8;
+    opacity: 0.9;
+}
+
+.item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid dodgerblue;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    color: #7B7B7B;
+    padding: 15px;
+    font-size: 16px;
+    
+}
+
+.item a i {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+.botaoSair{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid dodgerblue;
+    border-radius: 16px;
+    margin-top: 35px;
+    cursor: pointer;
+    color: #7B7B7B;
+    font-size: 16px;
+}
+
+.botaoSair:hover{
+    background-color:#B2D4E8;
+    opacity: 0.9;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.usuario img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.infoUsuario{
+    color: #ffffff;
+}
+
+.infoUsuario:last-child{
+    font-size: 13px;
+}
+
+
+/* *** MAIN *** */
+.conteudoPrincipal{
+    grid-area: conteudoPrincipal;
+    background-color: #F0F0F0;
+    /*border: 1px solid #dodgerblue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.frameMain{
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0F0;
+}
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO TABELA COLABORADORES *** */
+
+/* *** DIV CONTEUDO *** */
+.containerColaborador{
+    background-color: #F0F0F0;
+}
+
+/* *** DIV NAVEGAÇÃO *** */
+.navegacaoColaborador{
+    grid-area: navegacao;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.buscarColaborador{
+    width: 380px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+    font-weight: 400;
+    color: #7B7B7B;
+    margin-right: 25px;
+}
+
+.buscarColaborador::placeholder{
+    font-size: 16px;
+    color: #7B7B7B;
+}
+
+.bntBuscarColaborador{
+    padding: 10px 50px;
+    color: #7B7B7B;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+    border: dodgerblue;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.bntBuscarColaborador:hover{
+    background-color:#B2D4E8;
+    opacity: 0.8;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.selectNavegacaoColaborador{
+    width: 195px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+    color: #7B7B7B;
+    font-weight: 400;
+}
+
+
+.bntCastrarColaborador{
+    padding: 10px 50px;
+    color: #7B7B7B;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+}
+
+.bntCastrarColaborador:hover{
+    background-color:#B2D4E8;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO TABELA EMPRESA *** */
+
+.containerEmpresa{
+    background-color: #F0F0F0;
+}
+
+/* *** DIV NAVEGAÇÃO *** */
+.navegacaoEmpresa{
+    grid-area: navegacao;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.buscarEmpresa{
+    width: 380px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+    font-weight: 400;
+    color: #7B7B7B;
+    margin-right: 25px;
+}
+
+.buscarEmpresa::placeholder{
+    font-size: 16px;
+    color: #7B7B7B;
+}
+
+.bntBuscarEmpresa{
+    padding: 10px 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+    border: dodgerblue;
+    color: #7B7B7B;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.bntBuscarEmpresa:hover{
+    background-color:#B2D4E8;
+    opacity: 0.8;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.selectNavegacaoEmpresa{
+    width: 195px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+    color: #c4c1c1;
+    font-weight: 400;
+}
+
+.bntCastrarEmpresa{
+    padding: 10px 50px;
+    color: #7B7B7B;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+}
+
+.bntCastrarEmpresa:hover{
+    background-color:#B2D4E8;
+    opacity: 0.9;
+}
+
+.containerCadastroEmpresa{
+    background-color: #F0F0F0;
+    
+}
+
+.Cadastrar{
+    background-image: linear-gradient(to right,#EBBD36, #e34886);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    border: #fff;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO TABELAS COLABORADOR E EMPRESA *** */
+table, th, td{
+    border: 1px solid dodgerblue;
+    border-collapse: collapse;
+    padding: 5px 3px;
+}
+
+td{
+    text-align: center;
+}
+
+td a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table{
+    width: 100%;
+    color: #666565;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO CADASTRO COLABORADOR E EMPRESA *** */
+#Formulario{
+    color: #fff;
+    box-sizing: border-box;  
+}
+
+fieldset{
+    background-color: #F0F0F0;
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.titulo_form{
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid dodgerblue;
+    background-image: linear-gradient(to right, rgb(17, 54, 71),rgb(20,147,220));
+    border-radius: 5px;
+    color: #fff;
+}
+
+.input-container{
+    position: relative;
+}
+
+.label_input{
+    position: absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid dodgerblue;
+    outline:none;
+    color:#666565;
+    font-size: 15px;
+    width:100%;
+    letter-spacing: 2px;
+    }
+
+.inputuser:focus ~ .labelinput{
+    color: dodgerblue;
+    top:-10px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO EDITAR COLABORADOR E EMPRESA *** */
+.Modificar{
+    background-image: linear-gradient(to right,#EBBD36, #e34886);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    border: #fff;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#update{
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** ESTILIZAÇÃO RELATORIOS *** */
+.bodyRelatorios{
+    background-color: #F0F0F0;
+    display: flex;
+
+}
+.conteudoRelatorios{
+    width: 600px;
+    height: 500px;
+    border: 1px solid dodgerblue;
+    padding: 25px;
+}
+
+
+.itensRelatorios{
+    margin-bottom: 50px;
+}
+
+
+.data{
+    display: flex;
+}
+
+.data input{
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #7B7B7B;
+    border: 1px sold dodgerblue;
+    margin-right: 50px;
+}
+
+.inputCodigoColaborador input, .inputCodigoEmpresa input{
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #7B7B7B;
+    border: 1px sold dodgerblue;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.inputNomeColaborador input, .inputNomeEmpresa input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    color: #7B7B7B;
+    border: 1px sold dodgerblue;
+    margin-right: 50px;
+}
+
+
+.bntRelatorio{
+    background-image: linear-gradient(to right,#EBBD36, #e34886);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #666565;
+    border: dodgerblue;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#selectbox {
+    color: #666565;
+
+    background-color: #F0F0F0;
+}

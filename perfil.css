@@ -1,0 +1,58 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to left, #000034, rgb(17, 54, 71));
+    color: #333;
+}
+
+/* Container principal para os dados do usuário */
+.user-data-box {
+    background-image: linear-gradient(to right, rgb(12, 119, 180), rgb(17, 54, 71));
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 4000px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.user-data-box h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container para cada dado do usuário */
+.input-container {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.input-container p {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+

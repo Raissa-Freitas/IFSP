@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Relatórios</title>
+   
+</head>
+<body class="bodyRelatorios">
+
+    <div class="conteudoRelatorios">
+        
+        <div class="itensRelatorios data">
+            <div>
+                <label for="dataInicio">Data inicio:</label><br>
+                <input type="date" name="dataInicio">
+            </div>
+    
+            <div>
+                <label for="dataFim">Data fim:</label><br>
+                <input type="date" name="dataFim">
+            </div>
+        </div>
+        
+
+        <div class="div colaborador">
+
+            <div class="inputNomeColaborador">
+                <label for="nomeColaborador">Nome Colaborador:</label><br>
+                <input type="text" name="nomeColaborador">
+            </div>
+        </div>
+        <br><br>
+
+            <div class="inputNomeEmpresa">
+                <label for="nomeEmpresa">Nome Empresa:</label><br>
+                <input type="text">
+            </div>
+       
+        <br><br>
+        <button class="bntRelatorio" type="submit">Exportar relatório</button>
+    </div>
+</body>
+</html>

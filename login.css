@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F0F0F0;
+    color: #333;
+}
+
+/* Container principal */
+.login-box {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #030303;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+/* Botão de login */
+.btn {
+    background: #1e90ff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #4682b4;
+}
+
+/* Link "Voltar" */
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fdfdfd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #000000;
+}
+
+/* Logo */
+.logo {
+    width: 100px; /* Tamanho da logo */
+    height: auto;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Estilos para os campos de tipo_usuario (radio buttons) */
+.input-container label {
+    font-family: 'Poppins', sans-serif;  /* Fonte para o texto dos labels */
+    font-size: 18px;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+    color: #333;  /* Cor do texto */
+    margin-right: 20px;  /* Espaço entre os itens */
+}
+
+/* Estilos para os radio buttons dentro do tipo_usuario */
+.input-container input[type="radio"] {
+    margin-right: 10px;  /* Espaço entre o botão de rádio e o texto */
+}
+
+/* Estilos específicos para o campo de empresa (select) */
+#empresa-container label {
+    font-family: 'Poppins', sans-serif;  /* Fonte para o texto do label */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+    color: #333;  /* Cor do texto */
+    display: block;  /* Exibe o label como bloco para ocupar linha inteira */
+    margin-bottom: 10px;  /* Espaço abaixo do label */
+}
+
+/* Estilo para o select de empresas */
+#empresa {
+    font-family: 'Poppins', sans-serif;  /* Fonte para o texto do select */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 10px;  /* Espaçamento interno */
+    border-radius: 5px;  /* Bordas arredondadas */
+    border: 1px solid #ddd;  /* Cor da borda */
+    width: 100%;  /* Largura do select */
+    background-color: #f9f9f9;  /* Cor de fundo */
+    color: #333;  /* Cor do texto */
+}
+
+/* Estilo do select quando ele está em foco */
+#empresa:focus {
+    border-color: #007bff;  /* Cor da borda quando o select está em foco */
+    outline: none;  /* Remove o contorno padrão */
+}
+
+/* Estilos para o campo de CNPJ */
+#codigo-container label {
+    font-family: 'Poppins', sans-serif;  /* Fonte para o texto do label */
+    font-size: 16px;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+    color: #333;  /* Cor do texto */
+    display: block;  /* Exibe o label como bloco para ocupar linha inteira */
+    margin-bottom: 10px;  /* Espaço abaixo do label */
+}
+
+/* Estilo para o input de CNPJ */
+#codigo {
+    font-family: 'Poppins', sans-serif;  /* Fonte para o texto do input */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 10px;  /* Espaçamento interno */
+    border-radius: 5px;  /* Bordas arredondadas */
+    border: 1px solid #ddd;  /* Cor da borda */
+    width: 100%;  /* Largura do input */
+    background-color: #f9f9f9;  /* Cor de fundo */
+    color: #333;  /* Cor do texto */
+}
+
+/* Estilo do input de CNPJ quando ele está em foco */
+#codigo:focus {
+    border-color: #007bff;  /* Cor da borda quando o input está em foco */
+    outline: none;  /* Remove o contorno padrão */
+}

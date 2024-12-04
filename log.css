@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+    color: #333;
+}
+
+/* Container principal */
+.login-box {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+/* Botão de login */
+.btn {
+    background: #1e90ff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #4682b4;
+}
+
+/* Link "Voltar" */
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fdfdfd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #000000;
+}
+
+/* Logo */
+.logo {
+    width: 100px; /* Tamanho da logo */
+    height: auto;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
